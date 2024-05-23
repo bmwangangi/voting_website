@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #1e3c72, #2a5298);
+  background-size: 400% 400%;
+  animation: gradientAnimation 20s ease infinite;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 50% 50%; }
+  50% { background-position: 100% 50%; }
+  75% { background-position: 50% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"] {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00bfff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #009acd;
+}
+
+.positions, .vote-form {
+  margin-top: 20px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #00bfff;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-button:hover {
+  background-color: #009acd;
+}
+
+.candidates-list {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.candidate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  border-radius: 10px;
+  width: calc(50% - 20px);
+  box-sizing: border-box;
+}
+
+.candidate img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.candidate-info {
+  text-align: center;
+}
+
+.candidate h2 {
+  margin-top: 10px;
+}
+
+.candidate p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.vote-button {
+  background-color: #00bfff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.vote-button:hover {
+  background-color: #009acd;
+}

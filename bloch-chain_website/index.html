@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOKA Voting App</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to JOKA Voting App</h1>
+        <div class="voting-id-form">
+            <p>Please enter your voting ID:</p>
+            <input type="text" id="voter-id" placeholder="Enter your ID">
+            <button id="submit-button">Submit</button>
+        </div>
+        <div class="positions" id="positions" style="display: none;">
+            <h2>Positions</h2>
+            <div class="navigation">
+                <a href="presidency.html" id="presidency" class="nav-button">President</a>
+                <a href="governorship.html" id="governorship" class="nav-button">Governor</a>
+                <a href="senate.html" id="senate" class="nav-button">Senate</a>
+                <a href="mp.html" id="mp" class="nav-button">MP</a>
+                <a href="mca.html" id="mca" class="nav-button">MCA</a>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
